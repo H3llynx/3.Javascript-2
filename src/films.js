@@ -1,3 +1,4 @@
+// import movies from "./data.js";
 
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
@@ -17,7 +18,7 @@ function getMoviesFromDirector(array, director) {
 // Exercise 3: Calculate the average of the films of a given director.
 function moviesAverageOfDirector(array, director) {
   let movies = getMoviesFromDirector(array, director);
-  let result = parseFloat(movies.map(movie => movie.score).reduce((total, num) => (total + num)) / movies.length).toFixed(2);
+  let result = parseFloat(movies.map(movie => movie.score).reduce((total, num) => (total + num), 0) / movies.length).toFixed(2);
   console.log("EXERCICE 3 ->", result);
   return result
 }
@@ -50,7 +51,7 @@ function orderByYear(array) {
 // Exercise 6: Calculate the average of the movies in a category
 function moviesAverageByCategory(array, category) {
   let movies = array.filter(movie => movie.genre.map(genre => genre.toLowerCase()).includes(category.toLowerCase()));
-  let result = parseFloat(movies.map(movie => movie.score).reduce((total, num) => total + num) / movies.length).toFixed(2);
+  let result = parseFloat(movies.map(movie => movie.score).reduce((total, num) => (total + num), 0) / movies.length).toFixed(2);
   console.log("EXERCICE 6 ->", result);
   return result;
 }
