@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="40" failures="0" errors="0" time="1">
+  <testsuite name="tests/films.spec.js" errors="0" failures="0" skipped="36" timestamp="2025-10-30T10:34:48" time="0.82" tests="40">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name=" should return the average score of movies selecting only the director films. With 2 decimals! " time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return a new array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return the element in a single element array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0.003">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.032">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should not be NaN" time="0.003">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return the average score of movies from a the selected category, with 2 decimals max." time="0.002">
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return a new array, not update the original one" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 31 minute movie" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 341 minute movie" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 2 hour movie" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should be declared" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
