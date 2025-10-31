@@ -359,7 +359,7 @@ describe('Function "hoursToMinutes"', () => {
 });
 
 // Exercise 8
-describe('Function "bestFilmOfYear"', () => {
+describe.only('Function "bestFilmOfYear"', () => {
   it('should be declared', () => {
     expect(typeof bestFilmOfYear).toBe('function');
   });

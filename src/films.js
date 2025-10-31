@@ -1,4 +1,5 @@
-//import movies from "./data.js";
+
+const movies = require("./data");
 
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
@@ -6,6 +7,7 @@ function getAllDirectors(array) {
   console.log("EXERCICE 1 ->", result);
   return result;
 }
+
 
 
 // Exercise 2: Get the films of a certain director
@@ -22,6 +24,7 @@ function getMoviesFromDirector(array, director) {
 // I guet the new array (with 3 movies), then the original one (with many more movies), and true.
 
 
+
 // Exercise 3: Calculate the average of the films of a given director.
 function moviesAverageOfDirector(array, director) {
   let movies = getMoviesFromDirector(array, director);
@@ -31,23 +34,26 @@ function moviesAverageOfDirector(array, director) {
 }
 
 
+
 // Exercise 4:  Alphabetic order by title 
 function orderAlphabetically(array) {
   let result = array.toSorted((movie1, movie2) => {
     if (movie1.title < movie2.title) return -1;
-    else if (movie2.title < movie1.title) return 1;
+    else if (movie1.title > movie2.title) return 1;
     else return 0;
   }).slice(0, 20).map(movie => movie.title);
   console.log("EXERCICE 4 ->", result);
   return result
 }
 
+
+
 // Exercise 5: Order by year, ascending
 function orderByYear(array) {
   let result = array.toSorted((movie1, movie2) => {
-    return (movie1.title < movie2.title) ? -1 : (movie2.title < movie1.title) ? 1 : 0
+    return (movie1.title < movie2.title) ? -1 : (movie1.title > movie2.title) ? 1 : 0
   }).sort((movie1, movie2) => {
-    return (movie1.year < movie2.year) ? -1 : (movie2.year < movie1.year) ? 1 : 0
+    return (movie1.year < movie2.year) ? -1 : (movie1.year > movie2.year) ? 1 : 0
   });
   console.log("EXERCICE 5 ->", result);
   return result
@@ -65,16 +71,25 @@ function moviesAverageByCategory(array, category) {
 
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
-
+function hoursToMinutes(array) {
+  let result = array.map(film => {
+    let time = film.duration.replace(/[a-z]/g, "").split(" ");
+    let hours = Number(time[0]) * 60;
+    let minutes = time.length > 1 ? Number(time[1]) : 0;
+    return { ...film, duration: hours + minutes };
+  });
+  console.log("EXERCICE 7 ->", result);
+  return result;
 }
+
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
-
+function bestFilmOfYear(array, year) {
+  let result = array.filter(movie => movie.year === year)
+    .toSorted((movie1, movie2) => movie1.score < movie2.score ? 1 : movie2.score < movie1.score ? -1 : 0).slice(0, 1);
+  console.log("EXERCICE 8 ->", result);
+  return result;
 }
-
-
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */

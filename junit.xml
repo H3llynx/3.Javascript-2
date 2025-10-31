@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="40" failures="0" errors="0" time="1">
-  <testsuite name="tests/films.spec.js" errors="0" failures="0" skipped="36" timestamp="2025-10-30T10:34:48" time="0.82" tests="40">
+<testsuites name="jest tests" tests="40" failures="0" errors="0" time="1.591">
+  <testsuite name="tests/films.spec.js" errors="0" failures="0" skipped="36" timestamp="2025-10-31T16:27:54" time="1.114" tests="40">
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0">
       <skipped/>
     </testcase>
@@ -76,13 +76,17 @@
     <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0">
       <skipped/>
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0.003">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0">
+      <skipped/>
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.032">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0">
+      <skipped/>
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should not be NaN" time="0.003">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should not be NaN" time="0">
+      <skipped/>
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return the average score of movies from a the selected category, with 2 decimals max." time="0.002">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return the average score of movies from a the selected category, with 2 decimals max." time="0">
+      <skipped/>
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should be declared" time="0">
       <skipped/>
@@ -105,17 +109,13 @@
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 2 hour movie" time="0">
       <skipped/>
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should be declared" time="0">
-      <skipped/>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should be declared" time="0.015">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0">
-      <skipped/>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0.02">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0">
-      <skipped/>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0.003">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0">
-      <skipped/>
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0.006">
     </testcase>
   </testsuite>
 </testsuites>
