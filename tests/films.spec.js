@@ -59,7 +59,6 @@ describe('Function "getMoviesFromDirector"', () => {
   it('should return an array', () => {
     expect(getMoviesFromDirector(movies) instanceof Array).toBe(true);
   });
-
   it('should return a new array, not update the original one', () => {
     expect(getMoviesFromDirector(movies)).not.toEqual(movies);
   });
@@ -359,7 +358,7 @@ describe('Function "hoursToMinutes"', () => {
 });
 
 // Exercise 8
-describe.only('Function "bestFilmOfYear"', () => {
+describe('Function "bestFilmOfYear"', () => {
   it('should be declared', () => {
     expect(typeof bestFilmOfYear).toBe('function');
   });

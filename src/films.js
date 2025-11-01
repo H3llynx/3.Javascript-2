@@ -12,17 +12,18 @@ function getAllDirectors(array) {
 
 // Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
-  let result = array.filter(movie => movie.director.toLowerCase() === director.toLowerCase());
+  //let result = array.filter(movie => movie.director.toLowerCase() === director.toLowerCase());
+  let result = array.filter(movie => movie.director === director);
   console.log("EXERCICE 2 ->", result);
   return result;
 }
 
-// getMoviesFromDirector(movies, "francis ford coppola")
-// I'm confused here -> npm run test fails  should return an array (1 ms) and should return a new array,
-// not update the original one (1 ms). however it confirms that the function "should return a new array
-// with the movies from director (24 ms)". When I console.log result, array and Array.isArray(result)
-// I guet the new array (with 3 movies), then the original one (with many more movies), and true.
-
+// I'm confused here -> if I add .toLowerCase() to movie.director and director, to try
+// to make the function case insensitive, test fails on the following:
+//  -  should return an array
+//  - should return a new array, not update the original one
+// however it passes: "should return a new array with the movies from director".
+// I have not been able to solve that...
 
 
 // Exercise 3: Calculate the average of the films of a given director.
